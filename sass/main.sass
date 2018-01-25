@@ -28,7 +28,217 @@ body textarea:required:valid
 	color: #666
 
 //Custom Styles Here
+body
+	background-color: #FFFFFF
 
+h2
+	font-family: 'OpenSansBold'
+	font-size: 49px
+	text-transform: uppercase
+	color: #221F1F
+	margin: 0 0 50px 0
+
+.logo
+	line-height: 75px
+	font-family: 'GoraFreeRegular'
+	font-size: 18px
+	color: #F89513
+	text-transform: uppercase
+	letter-spacing: 3px
+
+header
+	background-color: #131415
+	height: 100%
+	.container
+		width: 100%
+		padding: 0 20px
+	.navMenu
+		text-align: center
+		ul
+			list-style-type: none
+			margin: 0
+			padding: 0
+			li
+				display: inline-block
+				margin-right: 25px
+				a
+					line-height: 75px
+					padding-left: 25px
+					display: block
+					font-family: 'OpenSansBold'
+					font-size: 12px
+					font-weight: bold
+					text-transform: uppercase
+					text-decoration: none
+					color: #ffffff
+					letter-spacing: 1px
+					&:hover
+						color: #F89513
+						span
+							background-image: url("../img/nav_iconsetHover.png")
+					span
+						background-image: url("../img/nav_iconset.png")
+						background-repeat: no-repeat
+						background-position: 0 5px
+						width: 20px
+						height: 20px
+						position: relative
+						left: -15px
+						display: inline-block
+				&:nth-child(1) a span
+					top: 2px
+				&:nth-child(2) a span
+					background-position: -25px 2px
+					top: 5px
+				&:nth-child(3) a span
+					background-position: -50px 3px
+					top: 3px
+	.head_phone
+		text-align: right
+		font-family: 'OpenSansBold'
+		font-size: 21px
+		font-weight: bold
+		margin-top: 15px
+		line-height: 1
+		position: relative
+		strong
+			color: #fff
+			display: block
+		a
+			text-decoration: underline
+			color: #BF7314
+			font-size: 14px
+			&:hover
+				color: #EAD5C4
+		span:hover
+			#hidden
+				display: block
+
+#hidden
+	display: none
+	position: absolute
+	font-size: 14px
+	text-align: left
+	background-color: #FFF
+	width: 160px
+	height: 70px
+	border-radius: 5px 0 5px 5px
+	padding: 15px 18px
+	box-shadow: 0px 0px 10px 0px rgba(23, 59, 117, 0.55)
+	top: 50px
+	right: 0
+	strong
+		color: #f89513
+		margin-bottom: 15px
+	span
+		font-family: 'OpenSansLight'
+		color: #221f1f
+	img
+		position: absolute
+		top: -10px
+		right: -5px
+
+.content
+	margin-bottom: 70px
+	.way
+		padding: 45px 0 28px 0
+		font-family: 'OpenSansLightItalic'
+		font-size: 14px
+		font-style: italic
+		a
+			color: #FAB46E
+			text-decoration: underline
+	.itemCont
+		margin: 25px 0
+		.item_img
+			position: relative
+			img
+				width: 100%
+				height: 180px
+				border-radius: 5px
+				object-fit: cover
+			span
+				position: absolute
+				top: 0
+				width: 100%
+				height: 180px
+				line-height: 180px
+				background-color: rgba(0, 0, 0, .52)
+				font-family: 'OpenSansBold'
+				font-size: 24px
+				font-weight: bold
+				color: #fff
+				text-transform: uppercase
+				text-align: center
+				letter-spacing: 3px
+				border-radius: 5px
+		.item_content
+			margin-top: 25px
+			h3
+				font-family: 'OpenSansBold'
+				font-size: 18px
+				color: #221f1f
+				margin-bottom: 15px
+			p
+				font-family: 'OpenSansLight'
+				font-size: 14px
+.partners
+	margin-bottom: 35px
+	.partner_img
+		width: 160px
+		height: 64px
+		margin: 30px auto
+		img
+			display: block
+			margin: 0 auto
+			filter: grayscale(100%)
+			&:hover
+				filter: grayscale(0)
+
+footer
+	background-color: #131415
+	height: 75px
+	span
+		font-family: 'OpenSansLight'
+		font-size: 14px
+		height: 75px
+		line-height: 1.286
+		color: #fff
+		a, strong
+			font-family: 'OpenSansBold'
+			color: #fff
+		a
+			text-decoration: underline
+			&:hover
+				color: #fff
+	.right
+		display: block
+		text-align: right
+		font-family: 'OpenSansBold'
+		font-size: 14px
+		color: #fff
+		margin-top: 10px
+		margin-bottom: 5px
+	.logo
+		display: block
+		text-align: center
+
+.social
+	text-align: right
+	a
+		display: inline-block
+		width: 20px
+		height: 20px
+		background-color: #d0d0d0
+		border-radius: 10px
+		position: relative
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+		&:hover
+			background-color: #f89513
 
 //ALWAYS END
 @import "media"
